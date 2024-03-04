@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/assets/js/queue.js"></script>
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<div class="overlay" style="display: none">
+			<form>
+				<progress max="100" value="0" id="progressbar"></progress>
+				<button class="accept">Join game</button>
+			</form>
+		</div>
+		<div class="content">
+			<div class="header">MLS HEADER</div>
+			<div class="ld-page">
+				<div>
+					<h1>LIVE DRAFT PAGE</h1>
+					<h3>just some random information lol</h3>
+					<span>We'd also love the option to</span>
+					<button class="disabled">Create private lobby</button>
+				</div>
+				<div>
+					<h3>
+						DEMO FOR QUEUE (queue will pop randomly within 3 to 7 seconds)
+					</h3>
+					<form name="settings">
+						<input
+							type="checkbox"
+							name="notification"
+							id="notification"
+							onchange="checkNotificationPermission(this)"
+						/>
+						<label for="notification">Notification</label>
+					</form>
+					<span
+						>Enabling the notification will open a notification that opens up
+						the browser tab when clicked</span
+					><br />
+					<button onclick="queue()">Start queue</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
