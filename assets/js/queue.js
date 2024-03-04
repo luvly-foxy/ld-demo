@@ -34,7 +34,7 @@ const popQueue = () => {
 		});
 	}
 
-	const audio = new Audio('/assets/sound/match_found.mp3');
+	const audio = new Audio('assets/sound/match_found.mp3');
 	audio.load();
 	audio
 		.play()
